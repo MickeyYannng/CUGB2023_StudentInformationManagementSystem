@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{74C2485D-BF19-4A10-AAA4-52FC5ADF7550}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>_1004226104杨美琪_学生管理系统.My.MyApplication</StartupObject>
+    <RootNamespace>_1004226104杨美琪_学生管理系统</RootNamespace>
+    <AssemblyName>1004226104杨美琪-学生管理系统</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>1004226104杨美琪-学生管理系统.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>1004226104杨美琪-学生管理系统.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChPassW.Designer.vb">
+      <DependentUpon>ChPassW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChPassW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassCourse.Designer.vb">
+      <DependentUpon>ClassCourse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClassCourse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassManage.Designer.vb">
+      <DependentUpon>ClassManage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClassManage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CouManage.Designer.vb">
+      <DependentUpon>CouManage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CouManage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalVariables.vb" />
+    <Compile Include="Gradeform.Designer.vb">
+      <DependentUpon>Gradeform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gradeform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GradeManage.Designer.vb">
+      <DependentUpon>GradeManage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GradeManage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoManage.Designer.vb">
+      <DependentUpon>InfoManage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InfoManage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Newform.Designer.vb">
+      <DependentUpon>Newform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Newform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewformCC.Designer.vb">
+      <DependentUpon>NewformCC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewformCC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewformClass.Designer.vb">
+      <DependentUpon>NewformClass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewformClass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewformPlan.Designer.vb">
+      <DependentUpon>NewformPlan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewformPlan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newformStu.Designer.vb">
+      <DependentUpon>newformStu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="newformStu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newformTea.Designer.vb">
+      <DependentUpon>newformTea.vb</DependentUpon>
+    </Compile>
+    <Compile Include="newformTea.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoticeStu.Designer.vb">
+      <DependentUpon>NoticeStu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NoticeStu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoticeTea.Designer.vb">
+      <DependentUpon>NoticeTea.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NoticeTea.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonInfo.Designer.vb">
+      <DependentUpon>PersonInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PersonInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeePlan.Designer.vb">
+      <DependentUpon>SeePlan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SeePlan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Selected.Designer.vb">
+      <DependentUpon>Selected.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Selected.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signUpForm.Designer.vb">
+      <DependentUpon>signUpForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="signUpForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SMS.Designer.vb">
+      <DependentUpon>SMS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SMS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SMSDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SMSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SMSDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SMSDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SMSDataSet10.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SMSDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SMSDataSet11.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SMSDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SMSDataSet12.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SMSDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SMSDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SMSDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SMSDataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SMSDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SMSDataSet4.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SMSDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SMSDataSet5.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SMSDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SMSDataSet6.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SMSDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SMSDataSet7.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SMSDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SMSDataSet8.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SMSDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SMSDataSet9.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SMSDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherInfo.Designer.vb">
+      <DependentUpon>TeacherInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ChPassW.resx">
+      <DependentUpon>ChPassW.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassCourse.resx">
+      <DependentUpon>ClassCourse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassManage.resx">
+      <DependentUpon>ClassManage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CouManage.resx">
+      <DependentUpon>CouManage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gradeform.resx">
+      <DependentUpon>Gradeform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GradeManage.resx">
+      <DependentUpon>GradeManage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoManage.resx">
+      <DependentUpon>InfoManage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Newform.resx">
+      <DependentUpon>Newform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewformCC.resx">
+      <DependentUpon>NewformCC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewformClass.resx">
+      <DependentUpon>NewformClass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewformPlan.resx">
+      <DependentUpon>NewformPlan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newformStu.resx">
+      <DependentUpon>newformStu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newformTea.resx">
+      <DependentUpon>newformTea.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoticeStu.resx">
+      <DependentUpon>NoticeStu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoticeTea.resx">
+      <DependentUpon>NoticeTea.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonInfo.resx">
+      <DependentUpon>PersonInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeePlan.resx">
+      <DependentUpon>SeePlan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Selected.resx">
+      <DependentUpon>Selected.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signUpForm.resx">
+      <DependentUpon>signUpForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SMS.resx">
+      <DependentUpon>SMS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherInfo.resx">
+      <DependentUpon>TeacherInfo.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="SMSDataSet.xsc">
+      <DependentUpon>SMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SMSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SMSDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SMSDataSet.xss">
+      <DependentUpon>SMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SMSDataSet1.xsc">
+      <DependentUpon>SMSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SMSDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SMSDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SMSDataSet1.xss">
+      <DependentUpon>SMSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SMSDataSet10.xsc">
+      <DependentUpon>SMSDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="SMSDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SMSDataSet10.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SMSDataSet10.xss">
+      <DependentUpon>SMSDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="SMSDataSet11.xsc">
+      <DependentUpon>SMSDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="SMSDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SMSDataSet11.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SMSDataSet11.xss">
+      <DependentUpon>SMSDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="SMSDataSet12.xsc">
+      <DependentUpon>SMSDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="SMSDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SMSDataSet12.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SMSDataSet12.xss">
+      <DependentUpon>SMSDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="SMSDataSet2.xsc">
+      <DependentUpon>SMSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SMSDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SMSDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SMSDataSet2.xss">
+      <DependentUpon>SMSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SMSDataSet3.xsc">
+      <DependentUpon>SMSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SMSDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SMSDataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SMSDataSet3.xss">
+      <DependentUpon>SMSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SMSDataSet4.xsc">
+      <DependentUpon>SMSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="SMSDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SMSDataSet4.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SMSDataSet4.xss">
+      <DependentUpon>SMSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="SMSDataSet5.xsc">
+      <DependentUpon>SMSDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="SMSDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SMSDataSet5.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SMSDataSet5.xss">
+      <DependentUpon>SMSDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="SMSDataSet6.xsc">
+      <DependentUpon>SMSDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="SMSDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SMSDataSet6.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SMSDataSet6.xss">
+      <DependentUpon>SMSDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="SMSDataSet7.xsc">
+      <DependentUpon>SMSDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="SMSDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SMSDataSet7.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SMSDataSet7.xss">
+      <DependentUpon>SMSDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="SMSDataSet8.xsc">
+      <DependentUpon>SMSDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="SMSDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SMSDataSet8.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SMSDataSet8.xss">
+      <DependentUpon>SMSDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="SMSDataSet9.xsc">
+      <DependentUpon>SMSDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="SMSDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SMSDataSet9.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SMSDataSet9.xss">
+      <DependentUpon>SMSDataSet9.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
